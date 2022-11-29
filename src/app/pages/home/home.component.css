@@ -1,0 +1,19 @@
+.main{
+    background-image: url("../../../assets/img/fondoPrincipal.jpg");
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 87.4vh;
+    /* border: 2px solid red; */
+    padding-top: 20px;
+    padding-bottom: 100px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+.main h1{
+    color: var(--font-color);
+    font-size: 40px;
+}

@@ -1,0 +1,42 @@
+.footer{
+    background-color: var(--footer-color);
+    width: 100%;
+    height: 50px;
+    padding-left: 200px;
+    padding-right: 200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.facebook{
+   background-image: url("../../../assets/img/facebook.png");
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   width: 3%;
+   height: 100%;
+   /* border: 2px solid red; */
+   border-radius: 1em;
+}
+.instagram{
+    background-image: url("../../../assets/img/instagram.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 3%;
+    height: 100%;
+    /* border: 2px solid red; */
+    border-radius: 1em;
+}
+.twitter{
+    background-image: url("../../../assets/img/twitter.png");
+   background-repeat: no-repeat;
+   background-size: contain;
+   background-position: center;
+   width: 3%;
+   height: 100%;
+   /* border: 2px solid red; */
+   border-radius: 1em;
+}

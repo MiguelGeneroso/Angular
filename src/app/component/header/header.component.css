@@ -1,0 +1,32 @@
+.nav{
+    background-color: var(--header-color);
+    padding: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.nav a{
+    font-size: 40px;
+    color: var(--font-color);
+}
+.nav div{
+    width: 20%;
+    /* border: 2px solid black; */
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav div a{
+    text-decoration: none;
+    color: var(--font-color);
+    font-family: var(--font-family);
+    font-size: 20px;
+}
