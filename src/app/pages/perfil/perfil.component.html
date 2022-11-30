@@ -1,0 +1,57 @@
+<main class="main">
+    <div class="contenedor">
+        <div class="div1">
+            <img src="{{miUsuario.url}}" alt="">
+            <div>
+            <!--../../../assets/img/libro-Ico.png -->
+                <img src="../../../assets/img/libro-Ico.png" alt="">
+                <h1>{{nombreCompleto()}}</h1>
+            </div>
+            <div>
+                <p>Nombre: </p>
+                <input type="text" required="" autocomplete="off" value="{{miUsuario.nombre}}">
+            </div>
+            <div>
+                <p>Apellidos:</p>
+                <input type="text" required="" autocomplete="off" value="{{miUsuario.apellidos}}">
+            </div>
+            <div>
+                <p>Correo:</p>
+                <input type="text" required="" autocomplete="off" value="{{miUsuario.correo}}">
+            </div>
+            
+            
+            
+        </div>
+        <div class="div2">
+            <div class="inputGroup">
+                <input type="text" required="" autocomplete="off" #inputNombre>
+                <label for="name">Nombre</label>
+            </div>
+            
+            <div class="inputGroup">
+                <input type="text" required="" autocomplete="off" #inputApellidos>
+                <label for="name">Apellidos</label>
+            </div>
+            
+            <div class="inputGroup">
+                <input type="text" required="" autocomplete="off" #inputEmail>
+                <label for="name">Email</label>
+            </div>
+            
+            <div class="inputGroup">
+                <input type="text" required="" autocomplete="off" #inputUrl>
+                <label for="name">Url</label>
+            </div>
+            <div [hidden] = "isHidden" class="{{color}}">
+                {{parrafo}}
+            </div>
+            <br><br>
+            <div>
+                <button (click)="modificarUsuario(inputNombre,inputApellidos,inputEmail,inputUrl)">
+                    Modificar
+                </button>
+            </div>
+        </div>
+    </div>
+</main>
