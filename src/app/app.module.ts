@@ -13,6 +13,8 @@ import { HomeComponent } from './pages/home/home.component';
 import { FormularioRegistroComponent } from './component/formulario-registro/formulario-registro.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 import { PerfilComponent } from './pages/perfil/perfil.component';
+import { LibrosComponent } from './pages/libros/libros.component';
+import { CodigoLibroPipe } from './pipes/codigo-libro.pipe';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { PerfilComponent } from './pages/perfil/perfil.component';
     HomeComponent,
     FormularioRegistroComponent,
     RegistroComponent,
-    PerfilComponent
+    PerfilComponent,
+    LibrosComponent,
+    CodigoLibroPipe
   ],
   imports: [
     BrowserModule,
