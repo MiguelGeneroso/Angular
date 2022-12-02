@@ -1,0 +1,40 @@
+<main class="main">
+    <div class="div2">
+        <div class="inputGroup">
+            <input type="text" required="" autocomplete="off" #inputTitulo>
+            <label for="name">Titulo</label>
+        </div>
+        
+        <div class="inputGroup">
+            <input type="text" required="" autocomplete="off" #inputTipo>
+            <label for="name">Tipo de libro</label>
+        </div>
+        
+        <div class="inputGroup">
+            <input type="text" required="" autocomplete="off" #inputAutor>
+            <label for="name">Autor</label>
+        </div>
+        
+        <div class="inputGroup">
+            <input type="text" required="" autocomplete="off" #inputPrecio>
+            <label for="name">Precio</label>
+        </div>
+        <div class="inputGroup">
+            <input type="text" required="" autocomplete="off" #inputPhoto>
+            <label for="name">Photo</label>
+        </div>
+        <div class="inputGroup">
+            <input type="text" required="" autocomplete="off" #inputIdLibro>
+            <label for="name">Id del libro</label>
+        </div>
+        <div class="inputGroup">
+            <input type="text" required="" autocomplete="off" #inputIdUsuario>
+            <label for="name">Id del usuario</label>
+        </div>
+    </div>
+    <div class="div2">
+        <button (click)="newLibro(inputTitulo,inputTipo,inputAutor,inputPrecio,inputPhoto,inputIdLibro,inputIdUsuario)">
+            Añadir Libro
+        </button>
+    </div>
+</main>

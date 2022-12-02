@@ -15,14 +15,15 @@
     color: var(--font-color);
 }
 .nav div{
-    width: 20%;
-    /* border: 2px solid black; */
+    width: auto;
+    border: 2px solid black;
     padding-left: 30px;
     padding-right: 30px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    gap: 20px;
 }
 .nav div a{
     text-decoration: none;

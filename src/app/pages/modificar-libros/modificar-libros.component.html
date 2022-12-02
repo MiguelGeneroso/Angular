@@ -1,23 +1,4 @@
 <main class="main">
-    <div class="div1"*ngIf="arrLibros.length === 0; else esFalso">
-        EL ARRAY ESTA VACIO     
-    </div>
-
-    <ng-template #esFalso>
-        <div class="div1">
-            <div class="card"  *ngFor="let libro of arrLibros; let impar = odd; let par = even">
-                <img src="{{libro.photo}}" alt="">
-                <p>{{libro.tipoLibro}}</p>
-                <p>  ___________________________  </p>
-                <p>{{libro.titulo}}</p>
-                <p>{{libro.autor}}</p>
-                <p>{{libro.id_libro | codigoLibro}}</p>
-                <p>{{libro.precio}}</p>
-                <button [ngClass]="{verde : impar, rojo : par}">Comprar</button>
-            </div>
-        </div> 
-    </ng-template>
-
     <div class="div2">
         <div class="inputGroup">
             <input type="text" required="" autocomplete="off" #inputTitulo>
@@ -51,8 +32,8 @@
             <label for="name">Id del usuario</label>
         </div>
         <div>
-            <button class="button" (click)="newLibro(inputTitulo,inputTipo,inputAutor,inputPrecio,inputPhoto,inputIdLibro,inputIdUsuario)">
-                Añadir Libro
+            <button class="button" (click)="modificarLibro(inputTitulo,inputTipo,inputAutor,inputPrecio,inputPhoto,inputIdLibro,inputIdUsuario)">
+                Modificar Libro
             </button>
         </div>
     </div>
