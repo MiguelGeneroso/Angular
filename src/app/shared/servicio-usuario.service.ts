@@ -17,10 +17,11 @@ export class ServicioUsuarioService {
 
   public register(usuario : Usuario) : void{
     this.url = "http://localhost:4000/registro";
-    this.http.get(this.url,usuario)
+    this.http.post(this.url,usuario);
   }
 
   public  login(usuario : Usuario) : void{
     this.url = "http://localhost:4000/registro";
+    this.http.post(this.url,usuario);
   }
 }
