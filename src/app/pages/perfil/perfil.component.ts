@@ -46,9 +46,9 @@ export class PerfilComponent{
     }
 
     if(url.value == ""){
-      this.miUsuario.url = this.miUsuario.url
+      this.miUsuario.foto = this.miUsuario.foto
     }else{
-      this.miUsuario.url = url.value;
+      this.miUsuario.foto = url.value;
     }
 
     if(url.value == "" && email.value == "" && apellidos.value == "" && nombre.value == ""){

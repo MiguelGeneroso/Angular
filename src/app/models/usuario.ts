@@ -1,11 +1,11 @@
 export class Usuario {
 
-    constructor(public id_usuario : Number,
+    constructor(public id_usuario : number,
         public nombre : String,
         public apellidos : String,
         public correo : String,
-        public url : String,
-        public password : String){
+        public foto : String,
+        public pass : String){
 
     }
 

@@ -12,14 +12,18 @@ export class ModificarLibrosComponent {
   public libros : Libro[];
 
   constructor(public librosService : ServicioService){
-
   }
 
   public modificarLibro(titulo : HTMLInputElement,tipo : HTMLInputElement,autor : HTMLInputElement,precio : HTMLInputElement,foto : HTMLInputElement,idLibro : HTMLInputElement,idUsuario : HTMLInputElement) : void{
 
-    let editLibro = new Libro(titulo.value,tipo.value,autor.value,parseInt(precio.value),foto.value,parseInt(idLibro.value),parseInt(idUsuario.value));
-    console.log(editLibro.id_libro);
-    
-    this.librosService.edit(editLibro);
+    this.librosService.edit(new Libro(parseInt(idLibro.value),parseInt(idUsuario.value),titulo.value,tipo.value,autor.value,parseInt(precio.value),foto.value))
+      .subscribe((data : Libro[]) => {
+        // console.log("DATA1 : "+data);
+        // console.log(JSON.stringify(data));
+
+        this.librosService.libros = data;
+        
+        
+      })
   }
 }

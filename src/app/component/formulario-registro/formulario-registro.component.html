@@ -1,36 +1,36 @@
 <main class="main">
     <div class="inputGroup">
-        <input type="text" required="" autocomplete="off">
+        <input type="text" required="" autocomplete="off" #nombre>
         <label for="name">Nombre</label>
     </div>
     
     <div class="inputGroup">
-        <input type="text" required="" autocomplete="off">
+        <input type="text" required="" autocomplete="off" #apellidos>
         <label for="name">Apellidos</label>
     </div>
     
     <div class="inputGroup">
-        <input type="text" required="" autocomplete="off">
+        <input type="text" required="" autocomplete="off" #correo>
         <label for="name">Email</label>
     </div>
     
     <div class="inputGroup">
-        <input type="text" required="" autocomplete="off">
+        <input type="text" required="" autocomplete="off" #url>
         <label for="name">Url</label>
     </div>
 
     <div class="inputGroup">
-        <input type="text" required="" autocomplete="off">
+        <input type="text" required="" autocomplete="off" #pass>
         <label for="name">Contraseña</label>
     </div>
 
     <div class="inputGroup">
-        <input type="text" required="" autocomplete="off">
+        <input type="text" required="" autocomplete="off" #confirmarPassword>
         <label for="name">Repetir Contraseña</label>
     </div>
     <br><br>
     <div>
-        <button>
+        <button (click)="insertUsuario(nombre,apellidos,correo,url,pass,confirmarPassword)">
             ¡REGISTRARSE!
         </button>
     </div>

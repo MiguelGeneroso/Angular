@@ -6,7 +6,7 @@
             </g>
         </svg>
         <input placeholder="Search" type="search" class="input" #id_libro>
-        <button (click)="buscarLibro(id_libro)"> Buscar</button>
+        <button (click)="buscarLibro(id_libro.value)"> Buscar</button>
     </div>
     <div class="div1" *ngIf="arrLibros.length === 0; else esFalso">
         EL ARRAY ESTA VACIO     
@@ -18,7 +18,7 @@
                 <div class="divbtn">
                     <button class="btnCerrar" (click)="borrarLibro(libro.id_libro)">X</button>
                 </div>
-                <img src="{{libro.photo}}" alt="">
+                <img src="{{libro.foto}}" alt="">
                 <p>{{libro.tipoLibro}}</p>
                 <p>  ________________________</p>
                 <p>{{libro.titulo}}</p>

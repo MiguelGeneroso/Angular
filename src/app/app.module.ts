@@ -3,6 +3,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { CommonModule } from '@angular/common';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule} from '@angular/common/http';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 import { ToastrModule } from 'ngx-toastr';
 
@@ -18,6 +19,8 @@ import { LibrosComponent } from './pages/añadirLibros/añadirLibros.component';
 import { CodigoLibroPipe } from './pipes/codigo-libro.pipe';
 import { MostrarLibrosComponent } from './pages/mostrar-libros/mostrar-libros.component';
 import { ModificarLibrosComponent } from './pages/modificar-libros/modificar-libros.component';
+import { LoginComponent } from './pages/login/login.component';
+import { LoginFormularioComponent } from './formulario/login-formulario/login-formulario.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,9 @@ import { ModificarLibrosComponent } from './pages/modificar-libros/modificar-lib
     LibrosComponent,
     CodigoLibroPipe,
     MostrarLibrosComponent,
-    ModificarLibrosComponent
+    ModificarLibrosComponent,
+    LoginComponent,
+    LoginFormularioComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +44,9 @@ import { ModificarLibrosComponent } from './pages/modificar-libros/modificar-lib
     CommonModule,
     BrowserAnimationsModule,
     ToastrModule.forRoot(),
-    HttpClientModule
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,5 +1,5 @@
 .main{
-    height: 87.4;
+    height: 87.4vh;
     padding-top: 50px;
     padding-left: 45%;
     padding-right: 45%;
@@ -10,10 +10,9 @@
     align-items: center;
     /* gap: -10px; */
 }
-.inputGroup {
+/* .inputGroup {
     font-family: 'Segoe UI', sans-serif;
     margin: 1em 0 1em 0;
-    /* max-width: 190px; */
     width: 200px;
     position: relative;
   }
@@ -49,9 +48,9 @@
   
   .inputGroup :is(input:focus, input:valid) {
     border-color: rgb(150, 150, 200);
-  }
+  } */
 
-  button {
+  /* button {
     position: relative;
     height: 50px;
     width: 150px;
@@ -100,4 +99,4 @@
   button:hover::after {
     opacity: 1;
     transform: scale(1,1);
-  }
+  } */

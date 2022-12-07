@@ -1,13 +1,21 @@
 <link rel="stylesheet" href="./header.component.css">
-<nav class="nav">
-    <a routerLink="home">MyBooks</a>
+<nav class="nav" *ngIf="comprobarLogin() === true; else esFalso">
+    <a routerLink="/home">MyBooks</a>
     <div>
         <a routerLink="/home">Home</a>
         <a routerLink="/books">AddBooks</a>
         <a routerLink="/modificarLibros">UpdateBooks</a>
         <a routerLink="/mostrarLibros">Books</a>
-        <a routerLink="/registro">Registro</a>
         <a routerLink="/perfil">Perfil</a>
     </div>
-    
 </nav>
+<ng-template #esFalso>
+    <nav class="nav2">
+        <a routerLink="/home">MyBooks</a>
+        <div>
+            <a routerLink="/home">Home</a>
+            <a routerLink="/registro">Registro</a>
+            <a routerLink="/login">Conectarse</a>
+        </div>
+    </nav>
+</ng-template>

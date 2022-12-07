@@ -15,13 +15,16 @@ export class ServicioUsuarioService {
     this.logueado = false;
   }
 
-  public register(usuario : Usuario) : void{
+  public register(usuario : Usuario){
     this.url = "http://localhost:4000/registro";
-    this.http.post(this.url,usuario);
+    // console.log("SERVICE URL : " + usuario.url);
+    // console.log("SERVICE PASSWORD : " + usuario.password);
+    
+    return this.http.post(this.url,usuario);
   }
 
-  public  login(usuario : Usuario) : void{
-    this.url = "http://localhost:4000/registro";
-    this.http.post(this.url,usuario);
+  public login(usuario : Usuario){
+    this.url = "http://localhost:4000/login";
+    return this.http.post(this.url,usuario);
   }
 }

@@ -23,17 +23,9 @@
             <input type="text" required="" autocomplete="off" #inputPhoto>
             <label for="name">Photo</label>
         </div>
-        <div class="inputGroup">
-            <input type="text" required="" autocomplete="off" #inputIdLibro>
-            <label for="name">Id del libro</label>
-        </div>
-        <div class="inputGroup">
-            <input type="text" required="" autocomplete="off" #inputIdUsuario>
-            <label for="name">Id del usuario</label>
-        </div>
     </div>
     <div class="div2">
-        <button (click)="newLibro(inputTitulo,inputTipo,inputAutor,inputPrecio,inputPhoto,inputIdLibro,inputIdUsuario)">
+        <button (click)="newLibro(inputTitulo,inputTipo,inputAutor,inputPrecio,inputPhoto)">
             Añadir Libro
         </button>
     </div>
